@@ -10,7 +10,7 @@ cursor = None
 
 def conectar_banco():
     global connection, cursor
-    connection = psycopg2.connect("dbname=py_Registro_dos_usuarios user=postgres password=123456")
+    connection = psycopg2.connect("dbname=py_Registro_dos_usuarios user=user password=password")
     cursor = connection.cursor()
 
 # cursor.execute("insert into usuarios (id, login, senha_hash, nome, email) values (id, login, senha, nome, email)")
